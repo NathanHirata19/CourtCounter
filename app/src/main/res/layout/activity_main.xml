@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:background="#FFFB6C"
     android:orientation="vertical" >
-    <EditText
-        android:text="Team Boi"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="#FFFB6C"
+    android:orientation="horizontal" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:background="#FFFB6C"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+    <TextView
+        android:text="Team Boi if you dont"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="65sp"
+        android:textSize="35sp"
         android:textColor="#000000"
         android:background="#F90A0A"
         />
-    <EditText
+    <TextView
         android:text="Score"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,8 +39,8 @@
         android:textColor="#000000"
         android:background="#310FA4"
         />
-    <EditText
-        android:text="0"
+    <TextView
+        android:id="@+id/addpoint2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -35,9 +50,86 @@
         />
     <Button
         android:text="+1"
-        android:layout_width="match_parent"
+        android:onClick="clickpoint1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="40sp"
         android:layout_gravity="center"
         android:textColor="#000000"
          />
 </LinearLayout>
+
+    <View
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:background="#001002"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:background="#FFFB6C"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+    <TextView
+        android:text="Team Girl if you dont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:background="#8E71DF"
+        />
+    <TextView
+        android:text="Score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="#000000"
+        android:background="#6EAFB9"
+        />
+    <TextView
+        android:id="@+id/addpoint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:textColor="#000000"
+        android:background="#15640F"
+        />
+    <Button
+        android:text="+1"
+        android:onClick="clickpoint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:padding="6dp"
+        android:text="reset"
+        android:onClick="clickpoint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:background="#FF90ED"
+        />
+    <Button
+        android:padding="10dp"
+        android:text="Game Over"
+        android:onClick="clickpoint1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:background="#90FF9B"
+        />
+    </LinearLayout>
