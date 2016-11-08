@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        gameOverAlert= new AlertDialog.Builder(MainActivity.this).create();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -35,17 +37,31 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickpoint1(View view){
         point1++;
-        point1View.setText("" + point1);
+        point1View.setText("" + point1);}
 
-    }
     public void clickpoint2(View view){
+        point2++;
+        point1View.setText("" + point2);}
+
+    public void clickpoint4(View view){
         point2--;
         point2View.setText("" + point2);
-
     }
+
+    public void clickpoint3(View view){
+        point1--;
+        point1View.setText("" + point1);
+    }
+
     public void clickgameover(View view){
         if (point1 > point2) {
             gameOverAlert.setMessage("Team 1 wins");
+        }
+        else if (point1 < point2) {
+            gameOverAlert.setMessage("Team 2 wins");
+        }
+        else {
+            gameOverAlert.setMessage("It Is a Tie");
         }
 
         gameOverAlert.setTitle("Game Over");
