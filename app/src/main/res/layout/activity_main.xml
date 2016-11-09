@@ -24,7 +24,8 @@
     android:layout_weight="1"
     android:orientation="vertical" >
     <TextView
-        android:text="Team Jonn jon"
+        android:text="Team billy bob"
+        android:id="@+id/team1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -42,7 +43,7 @@
         android:background="#310FA4"
         />
     <TextView
-        android:id="@+id/addpoint2"
+        android:id="@+id/addpoint1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -84,7 +85,8 @@
         android:layout_weight="1"
         android:orientation="vertical" >
     <TextView
-        android:text="Team who's mans"
+        android:text="Team joreyjock"
+        android:id="@+id/team2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -102,7 +104,7 @@
         android:background="#6EAFB9"
         />
     <TextView
-        android:id="@+id/addpoint1"
+        android:id="@+id/addpoint2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -112,7 +114,7 @@
         />
     <Button
         android:text="+1"
-        android:onClick="clickpoint1"
+        android:onClick="clickpoint2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="40sp"
